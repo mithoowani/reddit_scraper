@@ -45,7 +45,8 @@ def format_post(_post: dict) -> str:
 	:param _post: dictionary containing relevant parts of the reddit post
 	:return: string formatting of the post
 	"""
-	return '\n'.join([field for field in _post.values()])
+	df = pd.DataFrame(_post, index=[0]).transpose()
+	return df.to_html()
 
 
 def send_email(contents, subject):
