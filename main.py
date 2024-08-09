@@ -4,6 +4,9 @@ v1.0
 ------------------------------
 Scrapes r/watchexchange for new and relevant listings, saves them to a DataFrame/CSV,
 and sends e-mail notifications.
+
+Python 3.10
+New users pip install -r requirements.txt
 ------------------------------
 """
 
