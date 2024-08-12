@@ -1,0 +1,19 @@
+# Example configuration for reddit scraper
+
+# Turn email notifications on or off
+email_notifications: True
+
+# Substrings to search in post titles
+RELEVANT_SUBSTRINGS: [ 'Grand Seiko',
+                       'GS',
+                       'Credor',
+                       'King Seiko',
+                       'KS',
+                       'Nomos' ]
+
+# Subreddits to search
+subreddits: ['watchexchange',
+            'watchexchangecanada']
+
+# Number of new posts to review at each run
+n_posts_to_search: 5
