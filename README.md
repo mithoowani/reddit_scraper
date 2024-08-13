@@ -17,13 +17,11 @@
 3. `Set up crontab to run the script on a schedule`
 4. `CSV files containing new submissions are stored in /data, with date as filename`
 
-### Docker 
-Docker image **does not** contain config.yaml, secrets.yaml (see below for how to mount these)
-
+### Docker
 ```
-docker run --rm 
---mount type=bind,source=/folder/containing/config,target=/config 
---mount type=bind,source=/folder/containing/secrets,target=/secrets
---mount type=bind,source=/folder/containing/data,target=/data
+docker run --rm \ 
+--mount type=bind,source=/folder/containing/config,target=/config \
+--mount type=bind,source=/folder/containing/secrets,target=/secrets \
+--mount type=bind,source=/folder/containing/data,target=/data \
 reddit_scraper
 ```
